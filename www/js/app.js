@@ -1,5 +1,5 @@
 
-angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB', 'login', 'user.profile'])
+angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB', 'login', 'user.profile', 'eventos'])
 
   .run(function ($ionicPlatform, ngFB) {
     
@@ -52,7 +52,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB', 'login', 
         url: '/dash',
         views: {
           'tab-dash': {
-            templateUrl: 'templates/tab-dash.html'
+            templateUrl: 'templates/tab-dash.html',
+            controller: 'EventosCtrl'
           }
         }
       })
